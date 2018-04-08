@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#scene {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#baggrund {
+    width: 100vw;
+    height: 56vw;
+    background-image: url(baggrund.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+#forgrund {
+    width: 100vw;
+    height: 56vw;
+    background-image: url(forgrund_v3.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+#midgrund {
+    width: 100vw;
+    height: 56vw;
+    background-image: url(Midgrund_v2.svg);
+    background-size: 100%;
+    position: absolute;
+}
+
+#jesus {
+    width: 50vw;
+    height: 28.125vw;
+    background-image: url(jesusf%C3%A6rdig.svg);
+    background-size: 100%;
+    position: absolute;
+    bottom: 5vw;
+    left: 23.5vw;
+    animation-name: movejesus;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+#ståting {
+    width: 100vw;
+    height: 56vw;
+    background-image: url(St%C3%A5ting.svg);
+    background-size: 100%;
+    position: absolute;
+    bottom: 0vw;
+    left: -1vw;
+}
+
+#storsky {
+    width: 100vw;
+    height: 56vw;
+    background-image: url(Storsky.svg);
+    background-size: 100%;
+    position: absolute;
+    bottom: 17vw;
+    right: -70vw;
+    animation-name: movestorsky;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+
+#lillesky {
+    width: 50vw;
+    height: 28.125vw;
+    background-image: url(lillesky.svg);
+    background-size: 100%;
+    position: absolute;
+    right: -30vw;
+    bottom: 37vw;
+    animation-name: movelillesky;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+#brian {
+    width: 70vw;
+    height: 39.375vw;
+    background-image: url(BandittenBrian-01.svg);
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    left: -70vw;
+    animation-name: movebrian;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+}
+
+@keyframes movebrian {
+
+    100% {
+        left: -20vw;
+    }
+}
+
+@keyframes movejesus {
+    10% {
+        transform: rotate(10deg);
+        bottom: 5vw;
+    }
+    20% {
+        transform: rotate(20deg);
+        bottom: 5.5vw;
+    }
+    30% {
+        transform: rotate(25deg);
+        bottom: 6vw;
+    }
+    40% {
+        transform: rotate(30deg);
+        bottom: 5.5vw;
+    }
+
+    50% {
+        transform: rotate(30deg);
+        bottom: 5vw;
+    }
+
+    60% {
+        transform: rotate(-10deg);
+        bottom: 5vw;
+    }
+    70% {
+        transform: rotate(-20deg);
+        bottom: 5.5vw;
+    }
+    80% {
+        transform: rotate(-25deg);
+        bottom: 6vw;
+    }
+    90% {
+        transform: rotate(-30deg);
+        bottom: 5.5vw;
+    }
+    100% {
+        bottom: 5vw;
+    }
+}
+
+@keyframes movestorsky {
+    100% {
+        right: 70vw;
+    }
+}
+
+@keyframes movelillesky {
+    100% {
+        right: 80vw;
+    }
+}

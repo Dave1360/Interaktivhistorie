@@ -1,0 +1,17 @@
+<svg id="Forgrund" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>lillesky</title>
+  <g>
+    <ellipse class="cls-1" cx="1065.03" cy="577.78" rx="44.25" ry="28.22"/>
+    <ellipse class="cls-1" cx="979.22" cy="556.17" rx="53.23" ry="25.44"/>
+    <ellipse class="cls-1" cx="919.95" cy="577.78" rx="45.65" ry="28.22"/>
+    <ellipse class="cls-1" cx="1032.45" cy="546.41" rx="32.58" ry="15.68"/>
+    <rect class="cls-1" x="908.2" y="568.37" width="170.5" height="37.63" rx="12" ry="12" transform="translate(1986.89 1174.37) rotate(-180)"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg id="Forgrund" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcfcfc;
+      }
+    </style>
+  </defs>
+  <title>Storsky</title>
+  <g>
+    <ellipse class="cls-1" cx="871.34" cy="584.33" rx="72.31" ry="46.12"/>
+    <ellipse class="cls-1" cx="1011.56" cy="549.03" rx="86.98" ry="41.56"/>
+    <ellipse class="cls-1" cx="1108.41" cy="584.33" rx="74.59" ry="46.12"/>
+    <ellipse class="cls-1" cx="924.58" cy="533.09" rx="53.24" ry="25.62"/>
+    <rect class="cls-1" x="849.02" y="568.96" width="278.59" height="61.49" rx="12" ry="12"/>
+  </g>
+</svg>
