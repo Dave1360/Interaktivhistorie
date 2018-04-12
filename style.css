@@ -34,80 +34,30 @@ body {
     position: absolute;
 }
 
-#jesus {
-    width: 50vw;
-    height: 28.125vw;
-    background-image: url(jesusf%C3%A6rdig.svg);
-    background-size: 100%;
+/* ------------------ Jesus starter ---------------------*/
+
+#jesus_container {
     position: absolute;
-    bottom: 5vw;
-    left: 23.5vw;
-    animation-name: movejesus;
+    bottom: 11vw;
+    left: 43vw;
+}
+
+#jesus_sprite {
+    width: 10vw;
+    height: 14vw;
+    background-image: url(jesustest2-02.svg);
+    background-size: 800%;
+
+}
+
+.jesus_jump {
+    animation-name: move_jesus_kf;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
 }
 
-#ståting {
-    width: 100vw;
-    height: 56vw;
-    background-image: url(St%C3%A5ting.svg);
-    background-size: 100%;
-    position: absolute;
-    bottom: 0vw;
-    left: -1vw;
-}
-
-#storsky {
-    width: 100vw;
-    height: 56vw;
-    background-image: url(Storsky.svg);
-    background-size: 100%;
-    position: absolute;
-    bottom: 17vw;
-    right: -70vw;
-    animation-name: movestorsky;
-    animation-timing-function: linear;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-}
-
-
-#lillesky {
-    width: 50vw;
-    height: 28.125vw;
-    background-image: url(lillesky.svg);
-    background-size: 100%;
-    position: absolute;
-    right: -30vw;
-    bottom: 37vw;
-    animation-name: movelillesky;
-    animation-timing-function: linear;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-}
-
-#brian {
-    width: 70vw;
-    height: 39.375vw;
-    background-image: url(BandittenBrian-01.svg);
-    background-size: 100%;
-    position: absolute;
-    bottom: 0;
-    left: -70vw;
-    animation-name: movebrian;
-    animation-timing-function: linear;
-    animation-duration: 10s;
-}
-
-@keyframes movebrian {
-
-    100% {
-        left: -20vw;
-    }
-}
-
-@keyframes movejesus {
+@keyframes move_jesus_kf {
     10% {
         transform: rotate(10deg);
         bottom: 5vw;
@@ -150,6 +100,152 @@ body {
         bottom: 5vw;
     }
 }
+
+.jesus_taler {
+    animation-name: jesus_taler_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes jesus_taler_kf {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}
+
+/* ------------------ Jesus slutter --------------- */
+#ståting {
+    width: 100vw;
+    height: 56vw;
+    background-image: url(bod.svg);
+    background-size: 100%;
+    position: absolute;
+    bottom: 0vw;
+    left: -1vw;
+}
+
+#storsky {
+    width: 100vw;
+    height: 56vw;
+    background-image: url(Storsky.svg);
+    background-size: 100%;
+    position: absolute;
+    bottom: 17vw;
+    right: -70vw;
+    animation-name: movestorsky;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+
+#lillesky {
+    width: 50vw;
+    height: 28.125vw;
+    background-image: url(lillesky.svg);
+    background-size: 100%;
+    position: absolute;
+    right: -30vw;
+    bottom: 37vw;
+    animation-name: movelillesky;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+/* ----------------- Brian Starter ---------------------- */
+
+#brian_sprite {
+    width: 12vw;
+    height: 17.14vw;
+    background-image: url(Spritesheet_v3.svg);
+    background-size: 800% 200%;
+}
+
+.brian_walkcycle {
+    animation-name: move_brian_kf;
+    animation-timing-function: steps(8);
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes move_brian_kf {
+    0% {
+        background-position: 0 0 ;
+    }
+    100% {
+        background-position: -800% 0;
+
+    }
+}
+
+#brian_container {
+    position: absolute;
+}
+
+
+.move_brian_right {
+    animation-name: move_brian_right_kf;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes move_brian_right_kf {
+    0% {
+        left: -10vw;
+        bottom: -10vw;
+    }
+    100% {
+        left: 30vw;
+        bottom: 5vw;
+    }
+}
+
+.brian_gaar_ud {
+    animation-name: move_brian_left_kf;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: rotateY(180deg);
+}
+
+@keyframes move_brian_left_kf {
+    0% {
+        left: 30vw;
+        bottom: 5vw;
+    }
+    100% {
+        left: -15vw;
+        bottom: -15vw;
+    }
+}
+
+.brian_taler {
+    animation-name: brian_taler_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+@keyframes brian_taler_kf {
+    from {
+        background-position: 0 -100%;
+    }
+    to {
+        background-position: -200% -100%;
+    }
+}
+
+/* ------------------- Brian Slutter --------------------*/
 
 @keyframes movestorsky {
     100% {
